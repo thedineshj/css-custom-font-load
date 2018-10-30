@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loading custom fonts</title>
+    <style>
+        body{
+            font-size: 2em;
+            background-color: gold;
+            color: black;
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'Niramit';
+            src: url('./Niramit.ttf') format('truetype');
+        }
+        
+        .notnormal {
+            font-family: Niramit;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        I'm normal
+    </div>
+    <div class="notnormal">
+        I'm not normal
+    </div>
+</body>
+</html>
